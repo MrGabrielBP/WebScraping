@@ -13,10 +13,18 @@ O projeto utiliza as seguintes bibliotecas:
 
 Certifique-se de ter as bibliotecas instaladas antes de executar o projeto. Caso precise instalá-las, você pode utilizar o gerenciador de pacotes `pip` para instalar as dependências. Veja os exemplo abaixo:
 
-- ```bash pip install requests```
-- ```bash pip install beautifulsoup4```
-- ```bash pip install re```
-- ```bash pip install zipfile```
+```bash
+pip install requests
+```
+```bash
+pip install beautifulsoup4
+```
+```bash
+pip install re
+```
+```bash
+pip install zipfile
+```
 
 Certifique-se de ter uma conexão com a internet durante a instalação para que o `pip` possa baixar e instalar as bibliotecas necessárias.
 
@@ -30,11 +38,16 @@ O projeto conta com as seguintes funções:
 ## Como Utilizar
 
 1. Clone o repositório para sua máquina local utilizando o seguinte comando:
-```bash git clone https://github.com/MrGabrielBP/WebScraping.git```
+```bash
+git clone https://github.com/MrGabrielBP/WebScraping.git
+```
+
 2. Navegue para o diretório do projeto:
 3. Defina a URL da página web que deseja acessar na variável `url`.
 4. Execute o script Python e aguarde a conclusão.
-```bash python codigo.py```
+```bash
+python codigo.py
+```
 5. Os arquivos que correspondem ao padrão desejado serão baixados e salvos na pasta atual.
 6. Após o download, os arquivos serão compactados em um arquivo zip com o destino especificados.
 7. Verifique o arquivo zip gerado para acessar os arquivos baixados.
@@ -44,7 +57,7 @@ Tenha em mente que você pode personalizar o padrão utilizado para filtrar os l
 ## Expressão Regular Utilizada
 
 A expressão regular utilizada no projeto é:
-```bash r'https://www\..+Anexo.+\.pdf'```
+`bash r'https://www\..+Anexo.+\.pdf`
 
 Essa expressão regular procura por links que comecem com "https://www.", tenham qualquer sequência de caracteres (`.+`), seguida da palavra "Anexo", novamente qualquer sequência de caracteres, e finalizem com a extensão ".pdf". Isso permite filtrar os links que contêm a palavra "Anexo" e terminam com ".pdf".
 
