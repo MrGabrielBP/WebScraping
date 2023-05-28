@@ -35,6 +35,13 @@ O projeto conta com as seguintes funções:
 - `download_arquivo(url, destino)`: Realiza o download de um arquivo a partir de uma URL especificada. O arquivo é salvo no caminho de destino especificado.
 - `zipar_arquivos(destino, arquivos)`: Cria um arquivo zip no caminho de destino especificado e adiciona os arquivos da lista fornecida ao arquivo zip.
 
+## Expressão Regular Utilizada
+
+A expressão regular utilizada no projeto é:
+`bash r'https://www\..+Anexo.+\.pdf`
+
+Essa expressão regular procura por links que comecem com "https://www.", tenham qualquer sequência de caracteres (`.+`), seguida da palavra "Anexo", novamente qualquer sequência de caracteres, e finalizem com a extensão ".pdf". Isso permite filtrar os links que contêm a palavra "Anexo" e terminam com ".pdf".
+
 ## Como Utilizar
 
 1. Clone o repositório para sua máquina local utilizando o seguinte comando:
@@ -53,13 +60,6 @@ python codigo.py
 7. Verifique o arquivo zip gerado para acessar os arquivos baixados.
 
 Tenha em mente que você pode personalizar o padrão utilizado para filtrar os links desejados ajustando a expressão regular na variável `padrao` no arquivo.
-
-## Expressão Regular Utilizada
-
-A expressão regular utilizada no projeto é:
-`bash r'https://www\..+Anexo.+\.pdf`
-
-Essa expressão regular procura por links que comecem com "https://www.", tenham qualquer sequência de caracteres (`.+`), seguida da palavra "Anexo", novamente qualquer sequência de caracteres, e finalizem com a extensão ".pdf". Isso permite filtrar os links que contêm a palavra "Anexo" e terminam com ".pdf".
 
 ---
 
